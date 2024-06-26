@@ -41,6 +41,9 @@ class MeowEngine(object):
 
 
 if __name__ == "__main__":
-    engine = MeowEngine(h5dir="archive", cacheDir=None)
+
+    # 数据集文件目录
+    h5dir = 'archive'
+    engine = MeowEngine(h5dir=h5dir, cacheDir=None)
     engine.fit(20230601, 20231130)
     engine.eval(20231201, 20231229)
